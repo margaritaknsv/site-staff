@@ -5,57 +5,78 @@
     <title>Практика</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Rihan_Zer0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 	<link rel="icon" href="images/herzen-icon.png">
-	<style>
 	
+	<style>
+		html {
+		  position: relative;
+		  min-height: 100%;
+		}
+		body {
+		  margin-bottom: 310px;
+		}
+		.footer {
+		  position: absolute;
+		  bottom: 0;
+		}
+
 		.dropdown:hover>.dropdown-menu {
-		display: block;
+		  display: block;
+		  margin-top: 0;
 		}
 
 		.spiritual-background {
-		  background: url(images/tech.jpg) fixed;
+		  background: url(images/head.jpeg) fixed;
 		  background-size: cover;
-		  background-position: 25% 0%;
+		  background-position: 90% 100%;
 		}
 		
 		.special-card {
-		background-color: rgba(245, 245, 245, .77);
+		  background-color: rgba(245, 245, 245, .0);
+		  font-family: 'Montserrat', sans-serif;
 		}
 		
 		.img-logo {
-		width: 200px
+		  width: 120px
 		}
 		
 		.img-icon {
-		width: 40px
+ 		  width: 40px
 		}
-	</style>   
+
+		.border-3 {
+		  border-width:3px !important;
+		}
+
+	</style>
+ 
 	
 	</head>
 	
 	
-	<body>
+	<body style="background-color:#f0f0f0">
 		
 		<header>
-		<div class="container-fluid spiritual-background" >
-			<br><br><br><br><br><br><br><br><br>
+		<div class="container-fluid spiritual-background d-none d-md-block">
+			
 			<div class="row">
-			  <div class="col-sm-7">
-			  <div class="card special-card">
+			  <div class="col-5">
+			  <div class="card border-0 special-card">
 				<div class="card-body">
 				<div class="media">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle img-logo mr-3" src="images/herzen-logo-small-orig.png" alt="Test">
+                        <a class="media-left waves-light d-none d-md-block">
+                            <img class="rounded-circle img-logo my-2" src="images/herzen-logo-small-orig.png" alt="Test">
                         </a>
-                        <div class="media-body d-none d-lg-block">
+                        <div class="media-body d-none d-xl-block">
                             <h3 class="media-heading card-title">Герценовский университет</h3>
-                            <h6 class="card-subtitle my-3">Российский Государственный Педагогический Университет им. А. И. Герцена</h6>
-							<p class="card-text h3 mt-4">Кафедра компьтерных технологий и электронного обучения</p>							
+                            <h6 class="card-subtitle my-3">Российский Государственный Педагогический <br> Университет им. А. И. Герцена</h6>
+							<hr class="bg-dark">
+							<p class="card-text h3 mt-4"><strong>Кафедра компьтерных технологий <br> и электронного обучения</strong></p>							
                         </div>
 						
                     </div>
@@ -64,29 +85,41 @@
 			  </div>
 			  </div>
 			</div>
-			<br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+		</div>
+
+		<div class="container-fluid bg-dark d-md-none text-center"><br>
+			<div class="container border border-3 border-light rounded-circle" style="background-color: rgba(245, 245, 245, .85)">
+				<img src="images/herzen-logo-small-orig.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="Responsive image">
+				<div class="row">
+					<div class="col-12" style="font-family: 'Montserrat', sans-serif;">
+						<p class="h3 text-center">РГПУ им.<br>А. И. Герцена</p>
+						<p class="h1 text-center"><strong>КТиЭО</strong></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		</header>
 		
 		<nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark">
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse justify-content-md-center" id="mainNavBar">
 			<ul class="navbar-nav">
 			  <li class="nav-item mx-4">
-				<a class="nav-link" href="home.html">Главная</a>
+				<a class="nav-link" href="index.html">Главная</a>
 			  </li>
 			  <li class="nav-item mx-4">
-				<a class="nav-link" href="#">Абитуриенту</a>
+				<a class="nav-link" href="enrollee.html">Абитуриенту</a>
 			  </li>
 			  <li class="nav-item dropdown mx-4">
 				<a class="nav-link dropdown-toggle" href="#" id="dropdownC" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кафедра</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownC">
-				  <a class="dropdown-item" href="#">О кафедре</a>
-				  <a class="dropdown-item" href="#">Завкафедрой</a>
-				  <a class="dropdown-item" href="#">Сотрудники</a>
+				  <a class="dropdown-item" href="AboutUs.html">О кафедре</a>
+				  <a class="dropdown-item" href="head.html">Завкафедрой</a>
+				  <a class="dropdown-item" href="employees.html">Сотрудники</a>
 				  <a class="dropdown-item" href="#">Выпускники</a>
 				  <a class="dropdown-item" href="#">Наши разработки</a>
 				  <a class="dropdown-item" href="#">Документы</a>
@@ -124,64 +157,564 @@
 		  </div>
 		</nav>  
 		
-		<div class="container">
+		<main role="main" class="container">
 		<br><br><br>
 			<div class="row">
-				<div class="col-lg-4">
-						<ul class="w3-ul w3-small">
-							<li class="my-3"><a class="h6" href="educational_program.html">Образовательная программа </a></li>
-							<li class="my-3"><a class="h6" href="e-learning.html">Электронное обучение </a></li>
-							<li class="my-3"><a class="h6" href="digital_library.html">Электронная библиотека </a></li>
-							<li class="my-3 text-primary"><a class="h6">Практика </a></li>
-							<li class="my-3"><a class="h6" href="VKR.html">ВКР </a></li>
-						</ul>
-				</div>						
 				
-				<div class="col-lg-7">
+				<div class="col offset-0">
 					<h5>Практика</h5>
 					<br>
-					<p><a href="https://ict.herzen.spb.ru/education/tutoring/2015-2016/">2015-1016 учебные года</a></p>
-					<p><a href="https://ict.herzen.spb.ru/education/tutoring/2016-2017/">2016-1017 учебные года</a></p>
+					<div id="accordion">
+					  <div class="card">
+						<button type="button" class="card-header btn-block btn-link" id="hOne" data-toggle="collapse" data-target="#cOne" aria-expanded="false" aria-controls="cOne">
+						  <h6 class="mb-0">
+							  2015-2016 учебные года
+						  </h6>
+						</button>
+						<div id="cOne" class="collapse" aria-labelledby="hOne" data-parent="#accordion">
+						  <div class="card-body">
+							  <div class="btn-group d-flex" role="group">
+								<button id="fir" class="btn btn-outline-primary w-100" type="button" data-toggle="collapse" data-target="#Bak1" aria-expanded="false" aria-controls="Bak1">Бакалавриат</button>
+								<button id="sec" class="btn btn-outline-primary w-100" type="button" data-toggle="collapse" data-target="#Mag1" aria-expanded="false" aria-controls="Mag1">Магистратура</button>
+							  </div>
+							  <div class="collapse multi-collapse" id="Bak1">
+								<div class="card card-body">
+								  <nav>
+									  <div class="nav nav-tabs bg-light nav-justified" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link" id="thrd-tab" data-toggle="tab" href="#thrd" role="tab" aria-controls="thrd" aria-selected="true">3 курс</a>
+										<a class="nav-item nav-link" id="Four-tab" data-toggle="tab" href="#Four" role="tab" aria-controls="Four" aria-selected="false">4 курс</a>
+									  </div>
+									</nav>
+									<div class="tab-content" id="nav-tabContent">
+									  <div class="tab-pane fade" id="thrd" role="tabpanel" aria-labelledby="thrd-tab">
+										<div class="col offset-0"><br>
+											<h4>Документы на практику для 3 курса:</h4>
+											<p><a href="https://ict.herzen.spb.ru/docs/practice/3/3 курс_инструкция.docx">Инструкция</a></p>
+											<h4>Бланки</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/задание_3.doc">Задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/kalendarniy_plan_бак.doc">Календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/отчет.docx">Отчёт</a></li>
+											</ul>
+											<h4>Примеры заполненных бланков</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/приглашение.docx">Приглашение</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/отчет.docx">Отчёт</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/заявление.docx">Заявление</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/Договор.pdf" target="_blank">Договор</a></li>
+											</ul>
+										</div>
+									  </div>
+									  <div class="tab-pane fade" id="Four" role="tabpanel" aria-labelledby="Four-tab">
+										<div class="col offset-0"><br>
+											<h4>Документы на практику для 4 курса:</h4>
+											<p><a href="https://ict.herzen.spb.ru/docs/practice/4/4 курс_инструкция.docx">Инструкция</a></p>
+											<h4>Бланки</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/задание_4_произ.doc">Задание на практику</a> (производственная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/задание_4_пред.doc">Задание на практику</a> (преддипломная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/kalendarniy_plan_бак.doc">Календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/отчет.docx">Отчёт</a></li>
+											</ul>
+											<h4>Примеры заполненных бланков</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/приглашение_4.docx">Приглашение</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/отчет.docx">Отчёт</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/заявление.docx">Заявление</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/задание_произ.doc">Задание на практику</a> (производственная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/задание_пред.doc">Задание на практику</a> (преддипломная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/Договор.pdf" target="_blank">Договор</a></li>
+											</ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+							  </div>
+
+							  <div class="collapse multi-collapse" id="Mag1">
+								<div class="card card-body">
+									<div id="accordion-1">
+									  <div class="card">
+										<button type="button" class="card-header btn-block btn-link" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										  <h6 class="mb-0">
+											  Электронная коммерция
+										  </h6>
+										</button>
+										<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-1">
+										  <div class="card-body">
+											<nav>
+											  <div class="nav nav-tabs bg-light nav-justified" id="nav-tab" role="tablist">
+												<a class="nav-item nav-link" id="mek1-tab" data-toggle="tab" href="#mek1" role="tab" aria-controls="mek1" aria-selected="false">1 курс</a>
+												<a class="nav-item nav-link" id="mek2-tab" data-toggle="tab" href="#mek2" role="tab" aria-controls="mek2" aria-selected="false">2 курс</a>
+											  </div>
+											</nav>
+											<div class="tab-content" id="nav-tabContent">
+											  <div class="tab-pane fade" id="mek1" role="tabpanel" aria-labelledby="mek1-tab">
+												<br>
+												<h4>Документы на практику для магистров 1 курса «Электронная коммерция»:</h4>
+												<p><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/инструкция.docx">Инструкция</a></p>
+												<h4>Бланки</h4>
+												<h6>Педагогическая практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/педагогическая/задание_ЭК_педагогическая.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/педагогическая/kalendarniy_plan_пед.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/педагогическая/отчет_педагогическ.docx">Отчёт</a></li>
+												</ul>
+												<h6>Научно-исследовательская практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/научно-исследоват/задание_ЭК_научно-исследов.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/научно-исследоват/kalendarniy_plan_науч-исслед.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/научно-исследоват/отчет_научно-исследов.docx">Отчёт</a></li>
+												</ul>
+												<h4>Примеры заполненных бланков</h4>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/primer/приглашение.docx">Приглашение</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/primer/отчет.docx">Отчёт</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/primer/заявление.docx">Заявление</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/primer/Договор.pdf" target="_blank">Договор</a></li>
+												</ul>
+											  </div>
+											  <div class="tab-pane fade" id="mek2" role="tabpanel" aria-labelledby="mek2-tab">
+												<br>
+												<h4>Документы на практику для магистров 2 курса «Электронная коммерция»:</h4>
+												<p><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/инструкция.docx">Инструкция</a></p>
+												<h4>Бланки</h4>
+												<h6>Педагогическая практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/педагогическая/задание_ЭК_педагогическая.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/педагогическая/kalendarniy_plan_пед.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/педагогическая/отчет_педагогическая.docx">Отчёт</a></li>
+												</ul>
+												<h6>Научно-исследовательская практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/начно-исследоват/задание_ЭК_научно-исследов.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/начно-исследоват/kalendarniy_plan_науч-исслед.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/начно-исследоват/отчет_научно-исследов.docx">Отчёт</a></li>
+												</ul>
+												<h6>Преддипломная практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/преддипломная/задание_ЭК_преддипломная.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/преддипломная/kalendarniy_plan_преддиплом.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/преддипломная/отчет_преддипломная.docx">Отчёт</a></li>
+												</ul>
+												<h4>Примеры заполненных бланков</h4>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/primer/приглашение.docx">Приглашение</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/primer/отчет.docx">Отчёт</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/primer/заявление.docx">Заявление</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/primer/Договор.pdf" target="_blank">Договор</a></li>
+												</ul>
+											  </div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									  <div class="card">
+										<button type="button" class="card-header btn-block btn-link" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										  <h6 class="mb-0">
+											  Технология и менеджмент электронного обучения
+										  </h6>
+										</button>
+										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-1">
+										  <div class="card-body">
+											<nav>
+											  <div class="nav nav-tabs bg-light nav-justified" id="nav-tab" role="tablist">
+												<a class="nav-item nav-link" id="mt1-tab" data-toggle="tab" href="#mt1" role="tab" aria-controls="mt1" aria-selected="false">1 курс</a>
+												<a class="nav-item nav-link" id="mt2-tab" data-toggle="tab" href="#mt2" role="tab" aria-controls="mt2" aria-selected="false">2 курс</a>
+											  </div>
+											</nav>
+											<div class="tab-content" id="nav-tabContent">
+											  <div class="tab-pane fade" id="mt1" role="tabpanel" aria-labelledby="mt1-tab">
+												<br>
+												<h4>Документы на практику для магистров 1 курса «Технология и менеджмент электронного обучения»:</h4>
+												<p><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/инструкция.docx">Инструкция</a></p>
+												<h4>Бланки</h4>
+												<h6>Педагогическая практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/педагогическая/задание_ТМЭО_педагогическая.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/педагогическая/kalendarniy_plan_пед.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/педагогическая/отчет_педагогическая.docx">Отчёт</a></li>
+												</ul>
+												<h6>Научно-исследовательская практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/научно-исследоват/задание_ТМЭО_научно-исследов.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/научно-исследоват/kalendarniy_plan_науч-исслед.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/blanks/научно-исследоват/отчет_научно-исследов.docx">Отчёт</a></li>
+												</ul>
+												<h4>Примеры заполненных бланков</h4>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/primer/приглашение.docx">Приглашение</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/primer/отчет.docx">Отчёт</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/primer/заявление.docx">Заявление</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1TMEO/primer/Договор.pdf" target="_blank">Договор</a></li>
+												</ul>
+											  </div>
+											  <div class="tab-pane fade" id="mt2" role="tabpanel" aria-labelledby="mt2-tab">
+												<br>
+												<h4>Документы на практику для магистров 2 курса «Технология и менеджмент электронного обучения»:</h4>
+												<p><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/инструкция.docx">Инструкция</a></p>
+												<h4>Бланки</h4>
+												<h6>Преддипломная практика</h6>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2EK/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/blanks/задание_ТМЭО_преддипломная.doc">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/blanks/kalendarniy_plan_преддиплом.doc">Календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/blanks/отчет_преддипломная.docx">Отчёт</a></li>
+												</ul>
+												<h4>Примеры заполненных бланков</h4>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/primer/приглашение.docx">Приглашение</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/primer/отчет.docx">Отчёт</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/primer/заявление.docx">Заявление</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/mag2TMEO/primer/Договор.pdf" target="_blank">Договор</a></li>
+												</ul>
+											  </div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									  <div class="card">
+										<button type="button" class="card-header btn-block btn-link" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+										  <h6 class="mb-0">
+											  Корпоративное электронное обучение
+										  </h6>
+										</button>
+										<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion-1">
+										  <div class="card-body">
+											<h4>Документы на практику для магистров 1 курса «Корпоративное электронное обучение»:</h4>
+											<p><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/инструкция.docx">Инструкция</a></p>
+											<h4>Бланки</h4>
+											<h6>Научно-исследовательская практика</h6>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/blanks/задание_КЭО_1.doc">Задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/blanks/kalendarniy_plan_науч-иссл.doc">Календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/blanks/отчет.docx">Отчёт</a></li>
+											</ul>
+											<h4>Примеры заполненных бланков</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/primer/приглашение.docx">Приглашение</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/primer/отчет.docx">Отчёт</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/primer/заявление.docx">Заявление</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/primer/Договор.pdf" target="_blank">Договор</a></li>
+											</ul>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							  </div>
+							  </div>
+							</div>
+							</div>
+					  <div class="card">
+						<button type="button" class="card-header btn-block btn-link" id="hTwo " data-toggle="collapse" data-target="#cTwo " aria-expanded="false" aria-controls="cTwo ">
+						  <h6 class="mb-0">
+							  2016-2017 учебные года
+						  </h6>
+						</button>
+						<div id="cTwo " class="collapse" aria-labelledby="hTwo " data-parent="#accordion">
+						  <div class="card-body">
+							  <div class="btn-group d-flex" role="group">
+								<button id="firs" class="btn btn-outline-primary w-100" type="button" data-toggle="collapse" data-target="#Bak2" aria-expanded="false" aria-controls="Bak2">Бакалавриат</button>
+								<button id="secn" class="btn btn-outline-primary w-100" type="button" data-toggle="collapse" data-target="#Mag2" aria-expanded="false" aria-controls="Mag2">Магистратура</button>
+							  </div>
+							  <div class="collapse multi-collapse" id="Bak2">
+								<div class="card card-body">
+								  <nav>
+									  <div class="nav nav-tabs bg-light nav-justified" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="true">3 курс</a>
+										<a class="nav-item nav-link" id="Fourth-tab" data-toggle="tab" href="#Fourth" role="tab" aria-controls="Fourth" aria-selected="false">4 курс</a>
+									  </div>
+									</nav>
+									<div class="tab-content" id="nav-tabContent">
+									  <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+										<div class="col offset-0"><br>
+											<h4>Документы на практику для 3 курса:</h4>
+											<p><a href="https://ict.herzen.spb.ru/docs/practice/3/3 курс_инструкция.docx">Инструкция</a></p>
+											<h4>Бланки</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/задание_3.doc">Задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/kalendarniy_plan_бак.doc">Календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/blanks/отчет.docx">Отчёт</a></li>
+											</ul>
+											<h4>Примеры заполненных бланков</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/приглашение.docx">Приглашение</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/отчет.docx">Отчёт</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/заявление.docx">Заявление</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/задание%20на%20практику.docx">Задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/3/primer/Договор.pdf" target="_blank">Договор</a></li>
+											</ul>
+										</div>
+									  </div>
+									  <div class="tab-pane fade" id="Fourth" role="tabpanel" aria-labelledby="Fourth-tab">
+										<div class="col offset-0"><br>
+											<h4>Документы на практику для 4 курса:</h4>
+											<p><a href="https://ict.herzen.spb.ru/docs/practice/4/4 курс_инструкция.docx">Инструкция</a></p>
+											<h4>Бланки</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/Dogovor_po_praktike.doc">Договор</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/задание_4_произ.doc">Задание на практику</a> (производственная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/задание_4_пред.doc">Задание на практику</a> (преддипломная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/kalendarniy_plan_бак.doc">Календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/blanks/отчет.docx">Отчёт</a></li>
+											</ul>
+											<h4>Примеры заполненных бланков</h4>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/Характеристика.pdf" target="_blank">Характеристика</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/приглашение_4.docx">Приглашение</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/отчет.docx">Отчёт</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/заявление.docx">Заявление</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/задание_произ.doc">Задание на практику</a> (производственная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/задание_пред.doc">Задание на практику</a> (преддипломная)</li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/4/primer/Договор.pdf" target="_blank">Договор</a></li>
+											</ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+							  </div>
+
+							  <div class="collapse multi-collapse" id="Mag2">
+								<div class="card card-body">
+									<p>Договор по практике — единый для всех направлений подготовки.</p>
+									<p>Загрузить договор по практике можно по <a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/Dogovor_po_praktike%281%29.doc">ссылке</a>.</p>
+									<p>Остальные документы расположены в соответствующих разделах:</p>
+									<div id="accordion-2">
+									  <div class="card">
+										<button type="button" class="card-header btn-block btn-link" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										  <h6 class="mb-0">
+											  Электронная коммерция
+										  </h6>
+										</button>
+										<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-2">
+										  <div class="card-body">
+											<h5><strong>Электронная коммерция. 2 курс</strong></h5>
+											<br>
+											<p>Научно-исследовательская практика (01.09.16–28.09.16):</p>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/nauchno-issled/kalendarniy_plan_%D0%BD%D0%B0%D1%83%D1%87-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4_%D0%AD%D0%9A.doc">календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/nauchno-issled/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%AD%D0%9A_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2.doc">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/nauchno-issled/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2_%D0%AD%D0%9A.docx">отчет о прохождении</a></li>
+											</ul>
+											<p>Педагогическая практика (29.09.16–26.10.16):</p>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/pedagogicheskaya/kalendarniy_plan_%D0%BF%D0%B5%D0%B4_%D0%AD%D0%9A.doc">календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/pedagogicheskaya/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%AD%D0%9A_%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F.doc">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/pedagogicheskaya/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA_%D0%AD%D0%9A.docx">отчет о прохождении</a></li>
+											</ul>
+											<p>Преддипломная практика (11.05.17–24.05.17):</p>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/preddiplomnaya/kalendarniy_plan_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC.doc">календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/preddiplomnaya/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A2%D0%9C%D0%AD%D0%9E_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0%D1%8F.doc">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/ek/2/preddiplomnaya/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0%D1%8F.docx">отчет о прохождении</a></li>
+											</ul>
+										  </div>
+										</div>
+									  </div>
+									  <div class="card">
+										<button type="button" class="card-header btn-block btn-link" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										  <h6 class="mb-0">
+											  Технология и менеджмент электронного обучения
+										  </h6>
+										</button>
+										<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-2">
+										  <div class="card-body">
+											<h5><strong>Технологии и менеджмент электронного обучения. 2 курс</strong></h5>
+											<br>
+											<p>Научно-исследовательская практика(29.09.16–26.10.16):</p>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/nauchno-issled/kalendarniy_plan_%D0%BD%D0%B0%D1%83%D1%87-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4_%D0%A2%D0%9C%D0%AD%D0%9E.doc">календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/nauchno-issled/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A2%D0%9C%D0%AD%D0%9E_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2.doc">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/nauchno-issled/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2_%D0%A2%D0%9C%D0%AD%D0%9E.docx">отчет о прохождении</a></li>
+											</ul>
+											<p>Педагогическая практика (01.09.16–28.09.16):</p>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/pedagogicheskaya/kalendarniy_plan_%D0%BF%D0%B5%D0%B4_%D0%A2%D0%9C%D0%AD%D0%9E.doc">календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/pedagogicheskaya/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A2%D0%9C%D0%AD%D0%9E_%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F.doc">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/pedagogicheskaya/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%A2%D0%9C%D0%AD%D0%9E.docx">отчет о прохождении</a></li>
+											</ul>
+											<p>Преддипломная практика (11.05.17–24.05.17):</p>
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/preddiplomnaya/kalendarniy_plan_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC.doc">календарный план</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/preddiplomnaya/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A2%D0%9C%D0%AD%D0%9E_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0%D1%8F.doc">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/tmeo/2/preddiplomnaya/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0%D1%8F.docx">отчет о прохождении</a></li>
+											</ul>
+										  </div>
+										</div>
+									  </div>
+									  <div class="card">
+										<button type="button" class="card-header btn-block btn-link" id="headingSe7en" data-toggle="collapse" data-target="#collapseSe7en" aria-expanded="false" aria-controls="collapseSe7en">
+										  <h6 class="mb-0">
+											  Корпоративное электронное обучение
+										  </h6>
+										</button>
+										<div id="collapseSe7en" class="collapse" aria-labelledby="headingSe7en" data-parent="#accordion-2">
+										  <div class="card-body">
+											<nav>
+											  <div class="nav nav-tabs bg-light nav-justified" id="nav-tab" role="tablist">
+												<a class="nav-item nav-link" id="mcee1-tab" data-toggle="tab" href="#mcee1" role="tab" aria-controls="mcee1" aria-selected="false">1 курс</a>
+												<a class="nav-item nav-link" id="mcee2-tab" data-toggle="tab" href="#mcee2" role="tab" aria-controls="mcee2" aria-selected="false">2 курс</a>
+											  </div>
+											</nav>
+											<div class="tab-content" id="nav-tabContent">
+											  <div class="tab-pane fade" id="mcee1" role="tabpanel" aria-labelledby="mcee1-tab">
+												<br>
+												<h5><strong>Корпоративное электронное обучение. 1 курс</strong></h5>
+												<p>Научно-исследовательская практика (02.02.17–15.02.17):</p>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/1/nauchno-issled/kalendarniy_plan_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7.doc">календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/1/nauchno-issled/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9A%D0%AD%D0%9E_1.doc">задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/1/nauchno-issled/%D0%BE%D1%82%D1%87%D0%B5%D1%82.docx">отчет по практике</a></li>
+												</ul>
+											  </div>
+											  <div class="tab-pane fade" id="mcee2" role="tabpanel" aria-labelledby="mcee2-tab">
+												<br>
+												<h5><strong>Корпоративное электронное обучение. 2 курс</strong></h5>
+												<p>Научно-исследовательская практика (01.09.2016-28.09.2016):</p>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/nauchno-issled/kalendarniy_plan_%D0%BD%D0%B0%D1%83%D1%87-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4_%D0%AD%D0%9A.doc">календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/nauchno-issled/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%AD%D0%9A_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2.doc">задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/nauchno-issled/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2_%D0%AD%D0%9A.docx">отчет по практике</a></li>
+												</ul>
+												<p>Педагогическая практика (20.04.17–03.05.17):</p>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/pedagogicheskaya/kalendarniy_plan_%D0%BF%D0%B5%D0%B4_%D0%AD%D0%9A.doc">календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/pedagogicheskaya/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%AD%D0%9A_%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F.doc">задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/pedagogicheskaya/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA_%D0%AD%D0%9A.docx">отчет по практике</a></li>
+												</ul>
+												<p>Преддипломная практика (11.05.17–24.05.17):</p>
+												<ul>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/preddiplomnaya/kalendarniy_plan_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC.doc">календарный план</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/preddiplomnaya/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A2%D0%9C%D0%AD%D0%9E_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0%D1%8F.doc">задание на практику</a></li>
+													<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/keo/2/preddiplomnaya/%D0%BE%D1%82%D1%87%D0%B5%D1%82_%D0%BF%D1%80%D0%B5%D0%B4%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0%D1%8F.docx">отчет по практике</a></li>
+												</ul>
+											  </div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								  <p>По ссылке ниже представлены образцы оформления полного пакета документов <br>(см. <a href="https://ict.herzen.spb.ru/docs/practice/mag1KEO/%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F.docx">инструкцию</a>)</p>
+									<div class="btn-group d-flex" role="group">
+										<button id="last" class=" btn-info w-100" type="button" data-toggle="collapse" data-target="#ex" aria-expanded="false" aria-controls="ex">Примеры оформления документов</button>
+									  </div>
+									  <div class="collapse" id="ex">
+										<div class="card card-body">
+											<ul>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/examples/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83.pdf" target="_blank">задание на практику</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/examples/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.pdf" target="_blank">заявление на прохождение практики</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/examples/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80.pdf" target="_blank">договор</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/examples/%D0%BE%D1%82%D1%87%D0%B5%D1%82.pdf" target="_blank">отчет о прохождении практики</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/examples/%D0%BF%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5.pdf" target="_blank">приглашение с места практики</a></li>
+												<li><a href="https://ict.herzen.spb.ru/docs/practice/2016-2017/examples/%D0%A5%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.pdf" target="_blank">характеристика</a></li>
+											</ul>
+										</div>
+									  </div>
+									</div>
+							  </div>
+							  </div>
+							</div>
+						  
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-4 d-none d-md-block"><div class="container sticky-top"><br><br>
+					<ul class="w3-ul w3-small">
+							<li class="my-3"><a class="h6" href="educational_program.html">Образовательная программа</a></li>
+							<li class="my-3"><a class="h6" href="e-learning.html">Электронное обучение</a></li>
+							<li class="my-3"><a class="h6" href="digital_library.html">Электронная библиотека</a></li>
+							<li class="my-3 text-primary"><a class="h6">Практика</a></li>
+							<li class="my-3"><a class="h6" href="VKR.html">ВКР</a></li>
+						</ul></div>
+					</div>	
+				</div>
+				<p class="d-none d-md-block"><br></p>
+		
+			<div class="row d-md-none">
+				<div class="col offset-2">
+					<br><h5 class="text-info">Учебная деятельность:</h5>
+					<ul class="w3-ul w3-small">
+						<li class="my-3"><a class="h6" href="educational_program.html">Образовательная программа</a></li>
+						<li class="my-3"><a class="h6" href="e-learning.html">Электронное обучение</a></li>
+						<li class="my-3"><a class="h6" href="digital_library.html">Электронная библиотека</a></li>
+						<li class="my-3 text-primary"><a class="h6">Практика</a></li>
+						<li class="my-3"><a class="h6" href="VKR.html">ВКР</a></li>
+					</ul><br>
 				</div>
 			</div>
-			<br><br>
-		</div>
-	
-		<footer class="footer bg-dark">
+		</main>
+
+
+		<footer class="footer container-fluid bg-dark">
 			<br>
-			<div class="container">
-				<p class="float-right "><a href="#">Наверх</a></p>
-				<p class="text-light h4">Контакты</p>
-				<div class="media my-3">
-                <a class="media-left waves-light">
-                    <img class="rounded-circle img-icon" src="images/Mail.png" alt="Test">
-                </a>
-                <div class="media-body">
-                    <p class="text-light m-2">ctel-herzen@yandex.ru</p>
-                </div>
+			<div class="row">
+				<div class="container">
+					<p class="float-right "><a href="#">Наверх</a></p>
+					<p class="text-light h4">Контакты</p>
+					<div class="media my-3">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/Mail.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<a href="mailto:ctel-herzen@yandex.ru">
+							<p class="text-light m-2">ctel-herzen@yandex.ru</p></a>
+						</div>
+					</div>
+					<div class="media my-3">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/location.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
+							<p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
+						</div>
+					</div>
+					<div class="media my-3">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<p class="text-light m-2">+7 (812) 643-77-67</p>
+						</div>
+					</div>
+					<hr style="background-color: #B6BB43">
+					<p class="text-light text-right"><a href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
 				</div>
-				<div class="media my-3">
-                <a class="media-left waves-light">
-                    <img class="rounded-circle img-icon" src="images/location.png" alt="Test">
-                </a>
-                <div class="media-body">
-                    <a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
-					<p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
-                </div>
-				</div>
-				<div class="media my-3">
-                <a class="media-left waves-light">
-                    <img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
-                </a>
-                <div class="media-body">
-                    <p class="text-light m-2">+7 (812) 643-77-67</p>
-                </div>
-				</div>
-				<hr class="bg-warning">
-				<p class="text-light text-right"><a href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
 			</div>
-			<br>
 		</footer>
-		  
+		<script>
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".multi-collapse").collapse('hide');
+			});
+		});
+		</script>  
 	</body>
 </html>
