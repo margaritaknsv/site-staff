@@ -5,57 +5,119 @@
     <title>Образовательная программа</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Rihan_Zer0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
 	<link rel="icon" href="images/herzen-icon.png">
-	<style>
 	
+	<style>
+		#return-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: rgb(0, 0, 0);
+			background: rgba(0, 0, 0, 0.7);
+			width: 50px;
+			height: 50px;
+			display: block;
+			text-decoration: none;
+			-webkit-border-radius: 35px;
+			-moz-border-radius: 35px;
+			border-radius: 35px;
+			display: none;
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+		#return-to-top i {
+			color: #fff;
+			margin: 0;
+			position: relative;
+			left: 16px;
+			top: 13px;
+			font-size: 19px;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+		#return-to-top:hover {
+			background: rgba(0, 0, 0, 0.9);
+		}
+		#return-to-top:hover i {
+			color: #fff;
+			top: 5px;
+		}
+
+		html {
+		  position: relative;
+		  min-height: 100%;
+		}
+		body {
+		  margin-bottom: 295px;
+		}
+		.footer {
+		  position: absolute;
+		  bottom: 0;
+		}
+
 		.dropdown:hover>.dropdown-menu {
-		display: block;
+		  display: block;
+		  margin-top: 0;
 		}
 
 		.spiritual-background {
-		  background: url(images/tech.jpg) fixed;
+		  background: url(images/head.jpeg) fixed;
 		  background-size: cover;
-		  background-position: 25% 0%;
+		  background-position: 90% 100%;
 		}
 		
 		.special-card {
-		background-color: rgba(245, 245, 245, .77);
+		  background-color: rgba(245, 245, 245, .0);
+		  font-family: 'Montserrat', sans-serif;
 		}
 		
 		.img-logo {
-		width: 200px
+		  width: 120px
 		}
 		
 		.img-icon {
-		width: 40px
+ 		  width: 40px
 		}
+
+		.border-3 {
+		  border-width:3px !important;
+		}
+		
 	</style>   
 	
 	</head>
 	
 	
-	<body>
+	<body style="background-color:#f0f0f0">
 		
 		<header>
-		<div class="container-fluid spiritual-background" >
-			<br><br><br><br><br><br><br><br><br>
+		<div class="container-fluid spiritual-background d-none d-md-block">
+			
 			<div class="row">
-			  <div class="col-sm-7">
-			  <div class="card special-card">
+			  <div class="col-5">
+			  <div class="card border-0 special-card">
 				<div class="card-body">
 				<div class="media">
-                        <a class="media-left waves-light">
-                            <img class="rounded-circle img-logo mr-3" src="images/herzen-logo-small-orig.png" alt="Test">
+                        <a class="media-left waves-light d-none d-md-block">
+                            <img class="rounded-circle img-logo my-2" src="images/herzen-logo-small-orig.png" alt="Test">
                         </a>
-                        <div class="media-body d-none d-lg-block">
+                        <div class="media-body d-none d-xl-block">
                             <h3 class="media-heading card-title">Герценовский университет</h3>
-                            <h6 class="card-subtitle my-3">Российский Государственный Педагогический Университет им. А. И. Герцена</h6>
-							<p class="card-text h3 mt-4">Кафедра компьтерных технологий и электронного обучения</p>							
+                            <h6 class="card-subtitle my-3">Российский Государственный Педагогический <br> Университет им. А. И. Герцена</h6>
+							<hr class="bg-dark">
+							<p class="card-text h3 mt-4"><strong>Кафедра компьтерных технологий <br> и электронного обучения</strong></p>							
                         </div>
 						
                     </div>
@@ -64,12 +126,24 @@
 			  </div>
 			  </div>
 			</div>
-			<br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+		</div>
+
+		<div class="container-fluid bg-dark d-md-none text-center"><br>
+			<div class="container border border-3 border-light rounded-circle" style="background-color: rgba(245, 245, 245, .85)">
+				<img src="images/herzen-logo-small-orig.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="Responsive image">
+				<div class="row">
+					<div class="col-12" style="font-family: 'Montserrat', sans-serif;">
+						<p class="h3 text-center">РГПУ им.<br>А. И. Герцена</p>
+						<p class="h1 text-center"><strong>КТиЭО</strong></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		</header>
 		
 		<nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark">
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 
@@ -122,89 +196,225 @@
 			  </li>
 			</ul>
 		  </div>
-		</nav>  
+		</nav>
+
 		
-		<div class="container">
-		<br><br><br>
+		<main role="main" class="container">
+		<br><p class="d-none d-md-block"><br></p>
 			<div class="row">
-				<div class="col-lg-4">
-						<ul class="w3-ul w3-small">
-							<li class="my-3 text-primary"><a class="h6" >Образовательная программа </a></li>
-							<li class="my-3"><a class="h6" href="e-learning.html">Электронное обучение </a></li>
-							<li class="my-3"><a class="h6" href="digital_library.html">Электронная библиотека </a></li>
-							<li class="my-3"><a class="h6" href="practice.html">Практика </a></li>
-							<li class="my-3"><a class="h6" href="VKR.html">ВКР </a></li>
-						</ul>
-				</div>						
-				
-				<div class="col-lg-7">
+				<div class="col offset-0">
 					<h5>Образовательная программа</h5>
 					<br>
-					<p><a href="https://ict.herzen.spb.ru/education/leprog/bak/">Бакалавры (09.03.01 «Информатика и вычислительная техника»)</a></p>
-					<p><a href="https://ict.herzen.spb.ru/education/leprog/mag/">Магистры</a></p>
-					<p><a href="https://ict.herzen.spb.ru/docs/230100_62.pdf">Стандарт</a></p>
-					<p><a href="https://ict.herzen.spb.ru/education/edprog/plan">Учебный план</a></p>
-					<p><a href="https://ict.herzen.spb.ru/%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%B0%D1%82%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D0%B8%D1%8F/">Государственная аттестация</a></p>
-					<p class="h5"><b><u>Информация для 1 курса</u></b></p>
-					<h6>Самостоятельная работа:</h6>
+					<div id="accordion">
+					  <div class="card">
+						<button type="button" class="card-header btn-block btn-link" id="hOne" data-toggle="collapse" data-target="#cOne" aria-expanded="false" aria-controls="cOne">
+						  <h6 class="mb-0">
+							  Бакалавры (09.03.01 «Информатика и вычислительная техника»)
+						  </h6>
+						</button>
+						<div id="cOne" class="collapse" aria-labelledby="hOne" data-parent="#accordion">
+						  <div class="card-body">
+							<p><a class="btn btn-light" href="https://www.dropbox.com/sh/0qsnuyci65nxddk/AAB6C1dGV3Ss8a71sPt0Lz7ra?dl=0" target="_blank">Программы</a>
+							<a class="btn btn-light" data-toggle="collapse" href="#cAnnB" role="button" aria-expanded="false" aria-controls="cAnnB">Аннотации</a></p>
+							<div class="collapse" id="cAnnB">
+							  <div class="card card-body">
+								<h6>Дисциплины:</h6>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Алгоритмы и анализ сложности</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87_%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8.doc">Графические коммуникации</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%98%D0%A2_%D0%B2%D0%B8%D0%B7%D1%83%D1%87_%D0%98%D0%BD%D1%8F%D0%B7.doc">Информационные технологии в изучении иностранных языков</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9A%D0%93_%D0%98%D0%9D%D0%96_%D0%93%D0%A0%D0%90%D0%A4.doc">Инженерная и компьютерная графика</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Математика</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9E%D0%A1_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Операционные системы</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%A1%D0%B5%D1%82%D0%B8_%D0%B8_%D0%A2%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8.doc">Сети и телекоммуникации</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB_%D0%9F%D1%80%D0%BE%D0%B3%D1%80_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Управление программными проектами</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%AD%D0%92%D0%9C_%D0%9F%D0%A3.doc">ЭВМ и периферийные устройства</a></p>
+								<br><h6>Модули:</h6>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%BE%D0%B4_%D0%94%D0%B8%D1%81%D0%BA%D1%80_%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%86%D1%80%D1%8B_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Дискретные структуры</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%BE%D0%B4_%D0%98%D0%A0%D0%A1_%D0%BF%D1%80%D0%BE%D1%84_%D0%B4%D0%B5%D1%8F%D1%82_%D0%B8%D0%BD%D0%B6.doc">Информационные ресурсы и средства профессиональной деятельности инженера</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%BE%D0%B4_%D0%98%D0%A1_%D0%B0%D0%BD%D0%BD%D0%BE%D1%82.doc">Информационные системы</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%9E%D0%94_%D0%98%D0%A2_%D0%B1%D0%B0%D0%BA.doc">Информационные технологии</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%98%D0%A2_%D0%9C%D0%B0%D1%82_%D0%A4%D0%B8%D0%B7_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Информационные технологии в математике и физике</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%BE%D0%B4_%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D1%80%D0%B0%D0%B7%D1%80_Web-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9.doc">Проектирование и разработка web-решений</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%A2%D0%B5%D1%85_%D0%9C%D0%B5%D1%82_%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Технологии и методы вычислений</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/bak/%D0%9C%D0%BE%D0%B4_%D0%A4%D0%B8%D0%B7_%D0%BE%D1%81%D0%BD_%D0%AD%D0%92%D0%9C.doc">Физические основы ЭВМ</a></p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+
+
+					  <div class="card">
+						<button type="button" class="card-header btn-block btn-link" id="hTwo" data-toggle="collapse" data-target="#cTwo" aria-expanded="false" aria-controls="cTwo">
+						  <h6 class="mb-0">
+							  Магистры
+						  </h6>
+						</button>
+						<div id="cTwo" class="collapse" aria-labelledby="hTwo" data-parent="#accordion">
+						  <div class="card-body">
+							<p><a class="btn btn-light" href="https://www.dropbox.com/sh/ffbw5gxozafmpo5/AADP_4f9uXn8XIChblP1Bn-fa?dl=0" target="_blank">Программы</a>
+							<a class="btn btn-light" data-toggle="collapse" href="#cAnnM" role="button" aria-expanded="false" aria-controls="cAnnM">Аннотации</a></p>
+							<div class="collapse" id="cAnnM">
+							  <div class="card card-body">
+								<h6>Дисциплины:</h6>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%98%D0%9D%D0%B6%D0%B8%D0%BD%D0%B8%D1%80%D0%B8%D0%BD%D0%B3_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7_%D0%B4%D0%B5%D1%8F%D1%82.doc">Инжиниринг образовательной деятельности</a> </p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80_%D0%B8%D0%B7%D0%B4_%D1%81%D0%B8%D1%81%D1%82.doc">Интегрированные издательские системы и технологии</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%98%D0%9D%D0%A2%D0%95%D0%A0%D0%9D%D0%95%D0%A2%D0%98%D0%9A%D0%90.doc">Интернетика</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%98%D0%A2_%D0%B2%D0%B8%D0%B7%D1%83%D1%87_%D0%98%D0%BD%D1%8F%D0%B7.doc">Информационные технологии в изучении иностранных языков</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%98%D0%A2%D0%9F%D0%94.doc">Информационные технологии в профессиональной деятельности</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%9A%D0%BE%D0%BC%D0%BF_%D0%B3%D1%80%D0%B0%D1%84.doc">Компьютерная графика</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5.doc">Корпоративное обучение</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB_%D0%98%D0%A2.doc">Прикладные информационные технологии</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD_%D0%98%D0%A2.doc">Современные информационные технологии</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%A1%D0%BE%D1%86_%D0%9F%D1%80%D0%BE%D1%84_%D0%B2%D0%BE%D0%BF%D1%80_%D0%98%D0%BD%D1%84%D0%B8%D0%98%D0%A2_%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D1%8B.doc">Социальные и профессиональные вопросы информатики и информационных технологий</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%A1%D1%82%D0%B0%D1%82_%D0%BE%D0%B1%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.doc">Статистическая обработка данных</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%A2%D0%B5%D1%85%D0%BD_%D0%BC%D0%BE%D0%B1_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.doc">Технологии мобильного обучения</a></p>
+								<br><h6>Модули:</h6>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%9C%D0%BE%D0%B4_%D0%98%D0%BD%D0%BD%D0%BE%D0%B2_%D0%9C%D0%B5%D1%82_%D0%A2%D0%B5%D1%85%D0%BD_%D0%AD%D0%9E.doc">Инновационные методы и технологии электронного обучения</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%9C%D0%BE%D0%B4_%D0%9F%D1%80%D0%B8%D0%BA%D0%BB_%D0%98%D0%A2_%D0%B2_%D0%BE%D0%B1%D1%80.doc">Прикладные информационные технологии в образовании</a></p>
+								<p><a href="https://ict.herzen.spb.ru/docs/leProg/mag/%D0%9C%D0%BE%D0%B4_%D0%A3%D0%BF%D1%80%D0%B0%D0%B2_%D0%98%D0%A2_%D0%B8%D0%BD%D1%84%D1%80_%D0%BE%D0%B1%D0%BF_%D1%83%D1%87%D1%80.doc">Управление ИТ-инфраструктурой образовательного учреждения</a></p>
+							  </div>
+							</div>
+						</div>
+					  </div>
+
+
+					  <div class="card">
+						<button type="button" class="card-header btn-block btn-link" id="hThree" data-toggle="collapse" data-target="#cThree" aria-expanded="false" aria-controls="cThree">
+						  <h6 class="mb-0">
+							   Учебный план
+						  </h6>
+						</button>
+						<div id="cThree" class="collapse" aria-labelledby="hThree" data-parent="#accordion">
+						  <div class="card-body text-center">
+							<h6>ИВТ:</h6>
+							<img src="https://ict.herzen.spb.ru/wp-content/uploads/2014/03/Информатика-и-вычислительная-техника_1.jpg" class="img-fluid" style="max-width: 100%; height: auto;" alt="Responsive image">
+							<img src="https://ict.herzen.spb.ru/wp-content/uploads/2014/03/Информатика-и-вычислительная-техника_2.jpg" class="img-fluid" style="max-width: 100%; height: auto;" alt="Responsive image">
+							<img src="https://ict.herzen.spb.ru/wp-content/uploads/2014/03/Информатика-и-вычислительная-техника_3.jpg" class="img-fluid" style="max-width: 100%; height: auto;" alt="Responsive image">
+						  </div>
+						</div>
+					  </div>
+
+					
+					  <div class="card">
+						<button type="button" class="card-header btn-block btn-link" id="hFour" data-toggle="collapse" data-target="#cFour" aria-expanded="false" aria-controls="cFour">
+						  <h6 class="mb-0">
+							   Государственная аттестация
+						  </h6>
+						</button>
+						<div id="cFour" class="collapse" aria-labelledby="hFour" data-parent="#accordion">
+						  <div class="card-body">
+							<h6>Положения:</h6>
+							<p><a href="http://www.herzen.spb.ru/uploads/potehinas/files/%D0%BF%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%20%D0%BE%D0%B1%20%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%B8%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20.pdf" target="_blank">Приказ РГПУ им. А. И. Герцена от 25.01.16г. №184 «Об утверждении положения о государственной итоговой аттестации по образовательным программам высшего образования (программ бакалавриата, специалитета и магистратуры)»</a></p><br>
+							<p><a href="http://www.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%20%D0%93%D0%98%D0%90.pdf" target="_blank">Положение об итоговой государственной аттестации по образовательным программам высшего образования (программ бакалавриата, специалитета и магистратурыуры)</a></p><br>
+							<p><a href="http://www.herzen.spb.ru/uploads/potehinas/files/%D0%BF%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%20%D0%BE%D0%B1%20%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B0%D1%82%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D0%B8%D0%B8.pdf" target="_blank">Приказ РГПУ им.А.И. Герцена от 31.12.15г. №9462 «Об утверждении порядка проведения государственной итоговой аттестации по образовательным программам высшего образования — программ бакалавриата, программ специалитета и программ магистратуры»</a></p><br>
+							<p><a href="http://www.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%B8%D0%BD%D0%BE%D0%B1%D1%80%D0%BD%D0%B0%D1%83%D0%BA%D0%B8%20%D0%BE%D0%B1%20%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0.pdf" target="_blank">Приказ Минобрнауки РФ от 29.06.15г. №636 «Об утверждении порядка проведения государственной итоговой аттестации по образовательным программам высшего образования — программ бакалавриата, программ специалитета и программ магистратуры»</a></p><br>
+							<p><a href="http://www.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B0%D1%82%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D0%B8%D0%B8.pdf" target="_blank">Порядок организации и проведения государственной итоговой аттестации обучающихся по образовательным программам высшего образования (программ бакалавриата, специалитета и магистратуры)</a></p><br>
+							<p><a href="http://www.herzen.spb.ru/img/files/oplash//12.05.16-IB-609-12.pdf" target="_blank">Письмо Министерства образования и науки РФ “О выдаче диплома магистра с отличием”</a></p><br>
+							<h6>Документы:</h6>
+							<p><a href="https://www.dropbox.com/s/wcu5pr5ajk7qiyb/%D0%9F%D1%80%D0%BE%D0%B3_%D0%98%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9_%D0%93%D0%BE%D1%81_%D0%90%D1%82%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D0%B8%D0%B8_230100.pdf?dl=0"><b style="color:red">!</b>Программа государственной итоговой аттестации по направлению  09.03.01 программа «Информатика и вычислительная техника»<span><b style="color:red">!</b></a></p><br>
+							<p><a href="https://www.dropbox.com/s/z3yeclf6w42dyso/%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B%20%20%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0.pdf?dl=0"><b style="color:red">!</b>Вопросы Государственного экзамена</span><b style="color:red">!</b></a></p><br>
+							<p><a href="https://ict.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%203%20%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%20%D0%BE%D0%B1%20%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%BD%D1%8F%20%D1%82%D0%B5%D0%BC%20%D0%92%D0%9A%D0%A0.docx">Приказ об объявлении перечня тем ВКР</a></p><br>
+							<p><a href="https://ict.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%204%20%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%82%D0%B5%D0%BC%D1%8B%20%D0%92%D0%9A%D0%A0.doc">Заявка на утверждении тем ВКР</a></p><br>
+							<p><a href="https://ict.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%207%D0%B0%20%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%D1%8B%20%D0%BE%20%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B5%20%D0%BA%20%D0%93%D0%98%D0%90%20-%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0.docx">Приказы о допуске к ГИА (бюджет)</a></p><br>
+							<p><a href="https://ict.herzen.spb.ru/uploads/potehinas/files/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%205%D0%B1_%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%20%D0%BE%D0%B1%20%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%20%D1%82%D0%B5%D0%BC%20%D0%92%D0%9A%D0%A0%20%D0%B2%D0%BD%D0%B5%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82.docx">Приказ об утверждении исполнителя ВКР (внебюджет)</a></p><br>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					</div>
+					
+					<br><br>
+					<p><a href="https://ict.herzen.spb.ru/docs/230100_62.pdf" target="_blank">Стандарт</a></p>
+					<h5>Самостоятельная работа:</h5>
+					<p class="h6"><b><u>Информация для 1 курса</u></b></p>
 					<ul>
-						<li><a href="https://ict.herzen.spb.ru/%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%B0%D1%82%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D0%B8%D1%8F/">Основные сведения дисциплине «информатика»</a></li>
+						<li><a href="https://ict.herzen.spb.ru/docs/firstCourse/%D0%94%D0%BB%D1%8F_1-%D0%BA%D1%83%D1%80%D1%81%D0%B0_%D0%B8%D0%BD%D1%84.doc">Основные сведения дисциплине «информатика»</a></li>
 						<li><a href="https://ict.herzen.spb.ru/docs/firstCourse/%D0%9E%D0%A4%D0%9E%D0%A0%D0%9C%D0%9B%D0%95%D0%9D%D0%98%D0%95_%D0%9B%D0%90%D0%91_%D0%A0%D0%90%D0%91.doc">Требования к оформлению лабораторных работ</a></li>
 						<li><a href="https://ict.herzen.spb.ru/docs/firstCourse/%D0%90%D0%BD%D0%BD%D0%BE%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%BF%D0%BE%20Pascal.docx">Задания лабораторной работы №1</a></li>
-						<li><a href="#">Положение о СР</a></li>
-						<li><a href="#">Темы рефератов</a></li>
-						<li><a href="#">Темы проектов</a></li>
-						<li><a href="#">Темы домашних работ</a></li>
+
 					</ul>
-					<p><a href="#"><strong><b><u>Контрольно-измерительные материалы </u></b></strong></a></p>
-					<p><a href="https://ict.herzen.spb.ru/docs/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA_%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0_%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9.doc">График приема задолженностей</a></p>
-					<p><a href="#">Контрольные работы</a></p>
-					<p><a href="#">Тесты</a></p>
-					<p><a href="#">Экзаменационные билеты</a></p>
-					<p><a href="#">Вопросы к зачету</a></p>
-					<p><a href="#">Вопросы к экзамену</a></p>
-					<p><a href="#">Методические материалы</a></p>
-					<p><a href="#">Используемые технологии обучения (список)</a></p>						
+					<p><a><strong><b><u>Контрольно-измерительные материалы</a></u></b></strong></p>
+					<p><a href="https://ict.herzen.spb.ru/docs/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA_%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0_%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9.doc">График приема задолженностей</a></p>					
+				</div>
+
+				<div class="col-4 d-none d-md-block"><div class="container sticky-top"><br><br>
+					<ul class="w3-ul w3-small">
+							<li class="my-3 text-primary"><a class="h6">Образовательная программа</a></li>
+							<li class="my-3"><a class="h6" href="e-learning.html">Электронное обучение</a></li>
+							<li class="my-3"><a class="h6" href="digital_library.html">Электронная библиотека</a></li>
+							<li class="my-3"><a class="h6" href="practice.html">Практика</a></li>
+							<li class="my-3"><a class="h6" href="VKR.html">ВКР</a></li>
+						</ul></div>
+					</div>	
+				</div>
+			<p class="d-none d-md-block"><br></p>
+		
+			<div class="row d-md-none">
+				<div class="col offset-2">
+					<br><h5 class="text-info">Учебная деятельность:</h5>
+					<ul class="w3-ul w3-small">
+						<li class="my-3 text-primary"><a class="h6">Образовательная программа </a></li>
+						<li class="my-3"><a class="h6" href="e-learning.html">Электронное обучение</a></li>
+						<li class="my-3"><a class="h6" href="digital_library.html">Электронная библиотека</a></li>
+						<li class="my-3"><a class="h6" href="practice.html">Практика </a></li>
+						<li class="my-3"><a class="h6" href="VKR.html">ВКР </a></li>
+					</ul><br>
 				</div>
 			</div>
-			<br><br>
-		</div>
-	
-		<footer class="footer bg-dark">
+		</main>
+
+
+		<footer class="footer container-fluid bg-dark">
 			<br>
-			<div class="container">
-				<p class="float-right "><a href="#">Наверх</a></p>
-				<p class="text-light h4">Контакты</p>
-				<div class="media my-3">
-                <a class="media-left waves-light">
-                    <img class="rounded-circle img-icon" src="images/Mail.png" alt="Test">
-                </a>
-                <div class="media-body">
-                    <p class="text-light m-2">ctel-herzen@yandex.ru</p>
-                </div>
+			<div class="row">
+				<div class="container">
+					<p class="text-light h4">Контакты</p>
+					<div class="media my-3">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/Mail.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<a href="mailto:ctel-herzen@yandex.ru">
+							<p class="text-light m-2">ctel-herzen@yandex.ru</p></a>
+						</div>
+					</div>
+					<div class="media my-3">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/location.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
+							<p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
+						</div>
+					</div>
+					<div class="media my-3">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<p class="text-light m-2">+7 (812) 643-77-67</p>
+						</div>
+					</div>
+					<hr style="background-color: #B6BB43">
+					<p class="text-light text-right"><a href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
 				</div>
-				<div class="media my-3">
-                <a class="media-left waves-light">
-                    <img class="rounded-circle img-icon" src="images/location.png" alt="Test">
-                </a>
-                <div class="media-body">
-                    <a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
-					<p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
-                </div>
-				</div>
-				<div class="media my-3">
-                <a class="media-left waves-light">
-                    <img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
-                </a>
-                <div class="media-body">
-                    <p class="text-light m-2">+7 (812) 643-77-67</p>
-                </div>
-				</div>
-				<hr class="bg-warning">
-				<p class="text-light text-right"><a href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
 			</div>
-			<br>
 		</footer>
-		  
+		<a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+		<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= 150) {
+				$('#return-to-top').fadeIn(200);
+			} else {
+				$('#return-to-top').fadeOut(200);
+			}
+		});
+		$('#return-to-top').click(function() {
+			$('body,html').animate({
+				scrollTop : 0
+			}, 500);
+		});
+		</script>
 	</body>
 </html>
