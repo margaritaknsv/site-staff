@@ -1,0 +1,358 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <title>Сотрудники</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="KonusovaRita">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+	    @font-face {
+                   font-family: myFont;
+                   src: url("fonts2/Montserrat-Light.ttf"),
+                   url("fonts2/Montserrat-Light.eot");
+                   }
+		@font-face {
+                   font-family: myFont1;
+                   src: url("regular/Montserrat-Regular.ttf"),
+                   url("regular/Montserrat-Regular.eot");
+                   }		   
+		        
+		.back {
+              width: 100%;
+			  height:400;
+              background:url(images/шапка1.jpg) fixed no-repeat;
+              background-size: cover;
+			  background-position: 90% 100%;
+                        
+        }
+		.special-card {
+		              background-color: rgba(249, 249, 249, 0);
+                      margin-top:0px;
+					  margin-left:0px ;
+                      padding:30 110 30 30;
+					  border-radius:5;
+					  font-family: myFont1;
+					  color:#000000;
+        }
+        nav{
+            background-color: #353335;
+            align-items:center;
+		}
+		footer{
+		       background-color: #353335;
+			   font-family:myFont;
+			   color:#3f3f40;
+		}
+        ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+		}
+        .logo{
+		      height:65;
+		}
+		.size{
+		      font-size:20px;
+		}
+		.size1{
+			   font-size:12px;
+			   color:#3f3f40;
+		}
+		body{
+		     background:#f5f4f7;
+			 font-family:myFont;
+		}
+		table{
+              width: 100%; 
+              border: 1px solid black; 
+        }
+        td, th{ 
+                border: 1px solid black;
+                padding: 5px;
+        }
+        a{
+		  color:#5143a5;
+		}
+   </style>   
+  </head>
+  
+  <header>
+     <div class="container-fluid  back d-none d-md-block" >
+	    <div class="row ">
+           <div class="span7 special-card">
+               <div class="row">
+                  <div class="span2">
+                      <img class="logo" src="images/logoherz.png">
+                  </div>
+                  <div class="span5  size"> Герценовский университет 
+			          <p class="size1">Российский государственный педагогический <br> университет им. А. И. Герцена </p>
+			          <hr style="height:0px; background:#b9b9b9">
+                      <h3>Кафедра компьютерных технологий <br>и электронного обучения</h3>
+			      </div>
+			   </div>
+           </div>
+		</div>
+      </div>
+  </header>
+  
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dar">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-md-center" id="mainNavBar">
+		<ul class="navbar-nav">
+		    <li class="nav-item mx-4">
+			    <a class="nav-link" href="home.html">Главная</a>
+		    </li>
+		    <li class="nav-item mx-4">
+			    <a class="nav-link" href="#">Абитуриенту</a>
+		    </li>
+			<li class="nav-item dropdown active mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownC" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кафедра<span class="sr-only">(current)</span></a>
+				<div class="dropdown-menu" aria-labelledby="dropdownC">
+				  <a class="dropdown-item" href="#">О кафедре</a>
+				  <a class="dropdown-item" href="head.html">Завкафедрой</a>
+				  <a class="dropdown-item active" href="#">Сотрудники<span class="sr-only">(current)</span></a>
+				  <a class="dropdown-item" href="#">Выпускники</a>
+				  <a class="dropdown-item" href="#">Наши разработки</a>
+				  <a class="dropdown-item" href="#">Документы</a>
+				</div>
+			</li>
+			<li class="nav-item  dropdown mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownD" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Учебная деятельность</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownD">
+				  <a class="dropdown-item " href="educational_program.html">Образовательная программа</a>
+				  <a class="dropdown-item" href="e-learning.html">Электронное обучение</a>
+				  <a class="dropdown-item" href="digital_library.html">Электронная библиотека</a>
+				  <a class="dropdown-item" href="practice.html">Практика</a>
+				  <a class="dropdown-item" href="VKR.html">ВКР</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наука</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownS">
+				  <a class="dropdown-item" href="#">НИР студентов</a>
+				  <a class="dropdown-item" href="#">Проекты</a>
+				  <a class="dropdown-item" href="#">Конференции</a>
+				  <a class="dropdown-item" href="#">Публикации</a>
+				</div>
+			</li>
+			<li class="nav-item mx-4">
+				<a class="nav-link" href="#">Медиазал</a>
+			</li>
+			<li class="nav-item mx-4">
+				<a class="nav-link" href="#">Партнёры</a>
+			</li>
+	    </ul>
+	 </div>
+  </nav>
+  
+  <body>
+	<div class="container"><br>
+		<div class="row">
+			<div class="col-lg-12 col-md-4 col-sm-2"><h1 class="Vlasova">Власова Елена Зотиковна</h1> <hr>           
+				<div class="row">
+					<div class="col-lg-3 ><p class="A"><img src="https://ict.herzen.spb.ru/images/ezv.png"  width="220" height="223" alt="Vlasova" align="left" vspace="5" hspace="5"></p></div>
+					<div class="col-lg-6">
+						<p><strong>Дата рождения:</strong> 4 сентября</p> <br>
+						<p><strong>Должность:</strong> Заведующая кафедрой </p><br>
+              			<p><strong>Ученая степень и звание:</strong> Доктор педагогических наук, профессор <br><br>
+             			<p><strong>Электронная почта:</strong>  <a href="mailto:vip.zavkaf@mail.ru">vip.zavkaf@mail.ru</a>, <a href="mailto:vlasovaezrgpu@yandex.ru">vlasovaezrgpu@yandex.ru</a> </p>
+					</div>
+				</div><br><hr>
+				<h4>Читаемые дисциплины</h4>
+				<div style="margin-left: 20px;">
+					<ol>
+						<p><li>Информатика</li></p>
+						<p><li>Информационные технологии в физике</li></p>
+						<p><li>Программирование</li></p>
+						<p><li>Технологии компьютерного моделирования</li></p>
+						<p><li>Вычислительная математика</li></p>
+						<p><li>Анализ данных</li></p>
+						<p><li>Инженерия знаний</li> </p>
+					</ol>
+					<p><a href="https://atlas.herzen.spb.ru/indplan.php?ID=1945&amp;CHAIR=238">Индивидуальный план работы</a></p>
+					<p><a href="https://atlas.herzen.spb.ru/schedule.php?id=1945">Расписание занятий</a></p>
+				</div>
+				<hr>
+				<h4>Научно-исследовательская работа</h4><br>
+				<div style="margin-left: 20px;">
+					<ol>
+						<li><p><em>Участие в проектах</em></p></li>
+							<ul>
+								<p><li>Intel «Обучение для будущего»</li></p>
+								<p><li>Проект «Интернет-поддержка профессионального развития педагогов» договор ELSP/B1/Gr/004/020-06/ 360030/1 (внутренний договор 83/06–ДО)</p></li>
+								<p><li>Проект «Консультационная поддержка образовательных учреждений, ведущих заочную учебную работу со школьниками», договор с НФПК № ELSP/В3/C/017-05, внутренний договор 76/05)</p></li>
+								<p><li>Проект «Дополнительная подготовка педагогов-кураторов и сетевых преподавателей для экспериментального обучения школьников 10-11 классов с использованием Интернет на профильном уровне» ELSP/B3/C/011/01-06, Lot 2, внутренний договор 37/06–ДО)</p></li>
+								<p><li>Проект «Разработка методических материалов для дополнительной подготовки и методической поддержки педагогов, участвующих в Интернет-обучении школьников. Договор между НП «Телешкола и РГПУ им. А.И. Герцена» в рамках выполнения контракта НФПК № ELSP/B3/C/011/01-06 (внутренний договор 35/06–ДО)</p></li>
+								<p><li>Проект «Разработка вариативных электронных образовательных ресурсов для основного общего и среднего (полного) общего образования, обеспечивающих личностно-ориентированное обучение, в том числе для учащихся с ограниченными возможностями здоровья по дисциплине «История» г/к П 508 (внутренний № 133/08 ДО)</p></li>
+								<p><li>Проект «Создание электронных образовательных ресурсов профессионального образования по профессиям НПО «Электромеханик по торговому и холодильному оборудованию», «Машинист холодильных установок» и по специальности СПО «Монтаж и техническая эксплуатация холодильно-компрессорных машин и установок (по отраслям)» г/к П 604 (внутренний № 144/08 ДО)</p></li>
+								<p><li>«Внедрение и использование пакета свободного программного обеспечения (ПСПО) в учебном процессе» (в рамках государственного контракта НП 12), СПб, РГПУ им. А.И. Герцена</p></li>
+								<p><li>Договора № 0308/12 на выполнение работ по обучению региональных тьюторов основной и начальной школы по модулям повышения квалификации в рамках проекта «Разработка программ повышения квалификации учителей и региональных тьюторов, подготовка и методическая поддержка региональных тьюторов» с Негосударственным образовательным учреждением дополнительного профессионального образования «Институт компьютерных технологий»</p></li>
+							</ul>
+						<li><p><em>Публикационная активность</em> </p></li>
+							<ul>
+								<li><p><strong>173</strong> публикаций на <a href="elibrary.ru">elibrary.ru </a> (<a href="https://elibrary.ru/author_items.asp?authorid=289327">https://elibrary.ru/author_items.asp?authorid=289327</a>)</p></li>
+								<li><p><strong>166</strong> публикаций в РИНЦ </p></li>
+								<li><p><strong>1112</strong> цитирований </p></li>
+								<li><p>Индекс Хирша по всем публикациям на <a href="http://elibrary.ru">elibrary.ru</a> - <strong>14</strong></p></li>
+								<li><p><strong>3</strong>  публикации Scopus(<a href="https://www.scopus.com/authid/detail.uri?authorId=57192163660">https://www.scopus.com/authid/detail.uri?authorId=57192163660</a>)</p></li>
+							</ul>
+							<p><strong>Труды:</strong></p>
+								<ul>
+									<li><p>Власова Е. З. Инновационные способы подготовки учителей для северных регионов к использованию электронного обучения. // Известия Балтийской государственной академии рыбопромыслового флота. – Калининград: Изд-во БГАРФ, 2017. - № 2(40). - С. 114 - 119.</p></li>
+									<li><p>Власова Е.З., Государев И.Б. Технологии электронного обучения в профессиональной деятельности учителя: Учебное пособие. / под ред. Е.З. Власовой - СПб.: Изд-во РГПУ им. А. И. Герцена, 2015.- 296 с.;</p></li>
+									<li><p>Власова Е.З., Балакирева Э.В. Корпоративная среда информационно-технологического взаимодействия сетевого объединения вузов // Человек и образование. Академический вестник Института образования взрослых Российской Академии образования, № 3, 2011. – С. 45-48. - URL: <a href="http://obrazovanie21.narod.ru/Files/2011-3_p045-048.pdf">http://obrazovanie21.narod.ru/Files/2011-3_p045-048.pdf</a> (дата обращения 10.02.2014); (дата обращения15.04.2015);</p></li>
+									<li><p>Власова Е.З. Электронное обучение в современном вузе: проблемы, перспективы и опыт использования. // Universum: Вестник Герценовского университета. – 2014. - № 1. – С. 43 – 49.</p></li>
+								</ul>
+						<li><p><em>Интеллектуальная собственность</em></p></li>
+							<ol>
+								<li>Свидетельство № 2013613104 о государственной регистрации программы для ЭВМ «Основы веб и вики-технологий для педагогов»</li><br>
+									<div style="text-align: center"> 
+										<p><img class="svid" src="https://docviewer.yandex.ru/view/89855868/htmlimage?id=7cyrk-gyt2g6etuq31y13pkq9tb3j6fh21ocdyd4ixsmmylfwy0xg0ujlfhf0rvy3prpgr71rwnw0m7hruyviedrvnu7dt5syb9kd2g4k&amp;name=e1.png&amp;dsid=ede1a7c31811b9ac15cf7552c0c8c544" height="286" width="200" alt="enter image description here" /></p>
+									</div></li>
+								<li>Программа для ЭВМ: <a href="http://www1.fips.ru/fips_servl/fips_servlet?DB=EVM&amp;DocNumber=2017611893&amp;TypeFile=html">http://www1.fips.ru/fips_servl/fips_servlet?DB=EVM&amp;DocNumber=2017611893&amp;TypeFile=html</a></li>
+							</ol>
+					</ol>
+				</div>      
+				<hr>
+				<h4>Повышение квалификации</h4><br>
+				<div style="text-align: center">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>№</th>
+								<th>Год</th>
+								<th>Кол-во часов</th>
+								<th>Название программы</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><center> 2017</center></td>
+								<td><center> 72</center></td>
+								<td><center> Доп. проф. программа ПК “Проектирование и организация учебного процесса в электронной информационно-образовательной среде вуза”</center></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><center> 2017</center></td>
+								<td><center> 72</center></td>
+								<td><center> Доп. проф. программа ПК “Проектирование фонда оценочных средств основной профессиональной образовательной программы высшего образования”</center></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td><center> 2017</center></td>
+								<td><center> 72</center></td>
+								<td><center> Доп. проф. программа ПК “Нормативно-правовые основы здоровьесберегающей деятельности”</center></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><center>2017</center></td>
+								<td><center>72</center></td>
+								<td><center> Доп. проф. программа ПК “Компетенция здоровьесбережения в структуре личных и социальных компетенций обучающихся”</center></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td><center> 2017</center></td>
+								<td><center> 72</center></td>
+								<td><center> Доп. проф. программа ПК “Современные информационные технологии в образовании”</center></td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td><center>2017</center></td>
+								<td><center>свыше 500</center></td>
+								<td><center> Доп. проф. программа ПК “Интернационализация образовательного процесса высшей школы (английский язык)”</center></td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td><center>2016</center></td>
+								<td><center> 72</center></td>
+								<td><center> Доп. проф. программа ПК “Экспертиза образовательной программы высшего образования в соответствии с требованиями ФГОС ВО и профессиональными стандартами”</center></td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td><center>2015</center></td>
+								<td><center>72</center></td>
+								<td><center>Доп. проф. программа ПК “Проектирование программ государственной итоговой аттестации бакалавров и магистров на омнове технологий оценки компетентностей”</center></td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td><center>2015</center></td>
+								<td><center>свыше 500</center></td>
+								<td><center>Доп. проф. программа ПК “Интернационализация образовательного процесса высшей школы (английский язык)”</center></td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td><center>2014</center></td>
+								<td><center>72</center></td>
+								<td><center>По программе подготовки и организации государственной итоговой аттестации</center></td>
+							</tr>
+						</tbody>
+					</table><br>
+				</div>
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" align="center">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://docviewer.yandex.ru/view/89855868/htmlimage?id=7cyrk-gyt2g6etuq31y13pkq9tb3j6fh21ocdyd4ixsmmylfwy0xg0ujlfhf0rvy3prpgr71rwnw0m7hruyviedrvnu7dt5syb9kd2g4k&amp;name=830701.jpg&amp;dsid=ede1a7c31811b9ac15cf7552c0c8c544  alt="Vlasova1">
+						</div>
+						<div class="carousel-item">
+							<img src="https://docviewer.yandex.ru/view/89855868/htmlimage?id=7cyrk-gyt2g6etuq31y13pkq9tb3j6fh21ocdyd4ixsmmylfwy0xg0ujlfhf0rvy3prpgr71rwnw0m7hruyviedrvnu7dt5syb9kd2g4k&amp;name=a02b9f.jpg&amp;dsid=ede1a7c31811b9ac15cf7552c0c8c544  alt="Vlasova2">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a><br>
+				</div>	
+			</div>
+		</div>
+	</div>
+  </body>
+  
+  <footer class="footer">
+    <br>
+    <div class="container" style="size:20px">
+        <p class="float-right "><a href="#" style="color:#c0ad79">Наверх</a></p>
+        <h4 style="color:#c7c7c7"> Контакты </h4>
+        
+        
+        <div class="media my-3">
+            <a class="media-left waves-light">
+                <img class="rounded-circle img-icon" src="images/telephon.png" height="30" width="30" alt="Test">
+            </a>
+            <div class="media-body">
+                <p class="text-light m-2">+7 (812) 643-77-67</p>
+            </div>
+        </div>
+		<div class="media my-3">
+            <a class="media-left waves-light">
+                <img class="rounded-circle img-icon" src="images/Mail.png" height="30" width="30" alt="Test">
+            </a>
+            <div class="media-body">
+                <p class="text-light m-2">ctel-herzen@yandex.ru</p>
+            </div>
+        </div>
+		<div class="media my-3">
+            <a class="media-left waves-light">
+                <img class="rounded-circle img-icon" src="images/location.png" height="30" width="30" alt="Test">
+            </a>
+            <div class="media-body">
+                <a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
+                    <p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
+            </div>
+        </div>
+        <hr style="height:0px; background:#c7c7c7">
+        <p class="text-light text-right"><a href="https://ict.herzen.spb.ru" style="color:#c0ad79">ict.herzen.spb.ru</a></p>
+    </div>
+    <br>
+</footer>
+</html>

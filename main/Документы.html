@@ -1,0 +1,230 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <title>Документы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="KonusovaRita">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+	    @font-face {
+                   font-family: myFont;
+                   src: url("fonts2/Montserrat-Light.ttf"),
+                   url("fonts2/Montserrat-Light.eot");
+                   }
+		@font-face {
+                   font-family: myFont1;
+                   src: url("regular/Montserrat-Regular.ttf"),
+                   url("regular/Montserrat-Regular.eot");
+                   }		   
+		        
+		.back {
+              width: 100%;
+			  height:400;
+              background:url(images/шапка1.jpg) fixed no-repeat;
+              background-size: cover;
+              background-position: 90% 100%;          
+        }
+		.special-card {
+		              background-color: rgba(249, 249, 249, 0);
+                      margin-top:0px;
+					  margin-left:0px ;
+                      padding:30 110 30 30;
+					  border-radius:5;
+					  font-family: myFont1;
+					  color:#000000;
+        }
+        nav{
+            background-color: #353335;
+            align-items:center;
+		}
+		footer{
+		       background-color: #353335;
+			   font-family:myFont;
+			   color:#3f3f40;
+		}
+        ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+		}
+        .logo{
+		      height:65;
+		}
+		.size{
+		      font-size:20px;
+		}
+		.size1{
+			   font-size:12px;
+			   color:#3f3f40;
+		}
+		body{
+		     background:#f5f4f7;
+			 font-family:myFont;
+		}
+		table{
+              width: 100%; 
+              border: 1px solid black; 
+        }
+        td, th{ 
+                border: 1px solid black;
+                padding: 5px;
+        }
+        a{
+		  color:#5143a5;
+		}
+		input{
+			padding:10px;
+			margin:10px;
+			border:0;
+			background:#e8e8e8;
+			color:#353335;
+			width:300px;
+		
+		}
+		input:hover{
+					color:#fbfbfb;
+					background:#c3c3c3
+					
+		}
+		input:active{
+		           outline: none
+		}
+		input:focus{
+		           outline: none
+		}
+   </style>   
+  </head>
+  
+  <header>
+     <div class="container-fluid  back d-none d-md-block" >
+	    <div class="row ">
+           <div class="span7 special-card">
+               <div class="row">
+                  <div class="span2">
+                      <img class="logo" src="images/logoherz.png">
+                  </div>
+                  <div class="span5  size"> Герценовский университет 
+			          <p class="size1">Российский государственный педагогический <br> университет им. А. И. Герцена </p>
+			          <hr style="height:0px; background:#b9b9b9">
+                      <h3>Кафедра компьютерных технологий <br>и электронного обучения</h3>
+			      </div>
+			   </div>
+           </div>
+		</div>
+      </div>
+  </header>
+  
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dar">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-md-center" id="mainNavBar">
+		<ul class="navbar-nav">
+		    <li class="nav-item mx-4">
+			    <a class="nav-link" href="home.html">Главная</a>
+		    </li>
+		    <li class="nav-item mx-4">
+			    <a class="nav-link" href="#">Абитуриенту</a>
+		    </li>
+			<li class="nav-item dropdown active mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownC" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кафедра<span class="sr-only">(current)</span></a>
+				<div class="dropdown-menu" aria-labelledby="dropdownC">
+				  <a class="dropdown-item" href="#">О кафедре</a>
+				  <a class="dropdown-item" href="head.html">Завкафедрой</a>
+				  <a class="dropdown-item " href="#">Сотрудники<span class="sr-only">(current)</span></a>
+				  <a class="dropdown-item" href="#">Выпускники</a>
+				  <a class="dropdown-item" href="#">Наши разработки</a>
+				  <a class="dropdown-item active" href="#">Документы</a>
+				</div>
+			</li>
+			<li class="nav-item  dropdown mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownD" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Учебная деятельность</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownD">
+				  <a class="dropdown-item " href="educational_program.html">Образовательная программа</a>
+				  <a class="dropdown-item" href="e-learning.html">Электронное обучение</a>
+				  <a class="dropdown-item" href="digital_library.html">Электронная библиотека</a>
+				  <a class="dropdown-item" href="practice.html">Практика</a>
+				  <a class="dropdown-item" href="VKR.html">ВКР</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown mx-4">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наука</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownS">
+				  <a class="dropdown-item" href="#">НИР студентов</a>
+				  <a class="dropdown-item" href="#">Проекты</a>
+				  <a class="dropdown-item" href="#">Конференции</a>
+				  <a class="dropdown-item" href="#">Публикации</a>
+				</div>
+			</li>
+			<li class="nav-item mx-4">
+				<a class="nav-link" href="#">Медиазал</a>
+			</li>
+			<li class="nav-item mx-4">
+				<a class="nav-link" href="#">Партнёры</a>
+			</li>
+	    </ul>
+	 </div>
+  </nav>
+   
+  <body>
+	<div class="container"><br>
+		<div class="row">
+			<div class="col-lg-12 col-md-4 col-sm-2"><h1 align="center">Документы</h1>   <hr>
+				
+					<form align="center">
+						<div><input type="button" value="Приказ" onclick="javascript:window.location='https://ict.herzen.spb.ru/docs/prikaz.pdf'"/></div>
+						<div><input type="button" value="Устав" onclick="javascript:window.location='https://www.herzen.spb.ru/uploads/slevin/files/main/facts/regulations/%D0%A3%D1%81%D1%82%D0%B0%D0%B2%202016.pdf'"/></div>
+						<div><input type="button" value="Положение о кафедре" onclick="javascript:window.location='https://www.herzen.spb.ru/main/management/us/1351774759/'"/></div>
+						<div><input type="button" value="Положение кафедры КТЭО" onclick="javascript:window.location='https://ict.herzen.spb.ru/docs/%D0%9F%D0%9E%D0%9B%D0%9E%D0%96%D0%95%D0%9D%D0%98%D0%95_%D0%9E_%D0%9A%D0%90%D0%A4%D0%95%D0%94%D0%A0%D0%95.doc'"/></div>
+						<div><input type="button" value="План работы кафедры" onclick="javascript:window.location='https://ict.herzen.spb.ru/docs/%D0%9F%D0%BB%D0%B0%D0%BD_%D1%80%D0%B0%D0%B1_%D0%BA%D0%B0%D1%84_2016_17.pdf'"/></div>
+						<div><input type="button" value="Должностные инструкции ППС" onclick="javascript:window.location='https://www.herzen.spb.ru/main/management/us/1387519206/'"/></div>
+					</form>
+					
+						
+					
+				</div> 
+				
+			
+			</div>
+		</div>
+	 
+  </body>
+  <footer class="footer"><br>
+    <div class="container" style="size:20px">
+        <p class="float-right "><a href="#" style="color:#c0ad79">Наверх</a></p>
+        <h4 style="color:#c7c7c7"> Контакты </h4>
+        <div class="media my-3">
+            <a class="media-left waves-light">
+                <img class="rounded-circle img-icon" src="images/telephon.png" height="30" width="30" alt="Test">
+            </a>
+            <div class="media-body">
+                <p class="text-light m-2">+7 (812) 643-77-67</p>
+            </div>
+        </div>
+		<div class="media my-3">
+            <a class="media-left waves-light">
+                <img class="rounded-circle img-icon" src="images/Mail.png" height="30" width="30" alt="Test">
+            </a>
+            <div class="media-body">
+                <p class="text-light m-2">ctel-herzen@yandex.ru</p>
+            </div>
+        </div>
+		<div class="media my-3">
+            <a class="media-left waves-light">
+                <img class="rounded-circle img-icon" src="images/location.png" height="30" width="30" alt="Test">
+            </a>
+            <div class="media-body">
+                <a href="https://www.google.ru/maps/place/1+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81/@59.9340622,30.316832,17z/data=!4m8!1m2!2m1!1z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINC90LDQsS4g0YDQtdC60Lgg0JzQvtC50LrQuCwgNDgsINC60L7RgNC_0YPRgSAx!3m4!1s0x0:0xde67d372394025c!8m2!3d59.9327881!4d30.3181256" target="_blank">
+                    <p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
+            </div>
+        </div>
+        <hr style="height:0px; background:#c7c7c7">
+        <p class="text-light text-right"><a href="https://ict.herzen.spb.ru" style="color:#c0ad79">ict.herzen.spb.ru</a></p>
+    </div>
+    <br>
+</footer>
+</html>
