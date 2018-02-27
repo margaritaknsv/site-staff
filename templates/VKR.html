@@ -10,7 +10,6 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-	<link href="css/fontawesome-all.css" rel="stylesheet">
 	<link rel="icon" href="images/herzen-icon.png">
 	
 	<style>
@@ -18,41 +17,34 @@
 			position: fixed;
 			bottom: 20px;
 			right: 20px;
-			background: rgb(0, 0, 0);
 			background: rgba(0, 0, 0, 0.7);
 			width: 50px;
 			height: 50px;
-			display: block;
-			text-decoration: none;
 			-webkit-border-radius: 35px;
 			-moz-border-radius: 35px;
 			border-radius: 35px;
 			display: none;
-			-webkit-transition: all 0.3s linear;
-			-moz-transition: all 0.3s ease;
-			-ms-transition: all 0.3s ease;
-			-o-transition: all 0.3s ease;
-			transition: all 0.3s ease;
 		}
-		#return-to-top i {
-			color: #fff;
-			margin: 0;
+		
+		#return-to-top img {
+			height : 20px;
+			margin-left: 0px;
 			position: relative;
-			left: 16px;
-			top: 13px;
-			font-size: 19px;
+			left: 15px;
+			top: 10px;
 			-webkit-transition: all 0.3s ease;
 			-moz-transition: all 0.3s ease;
 			-ms-transition: all 0.3s ease;
 			-o-transition: all 0.3s ease;
 			transition: all 0.3s ease;
 		}
+		
 		#return-to-top:hover {
 			background: rgba(0, 0, 0, 0.9);
 		}
-		#return-to-top:hover i {
-			color: #fff;
-			top: 5px;
+		
+		#return-to-top:hover img {
+			top: 3px;
 		}
 
 		html {
@@ -60,22 +52,44 @@
 		  min-height: 100%;
 		}
 		body {
-		  margin-bottom: 295px;
+		  background-color:#f0f0f0;
+		  margin-bottom: 268px;
 		}
 		.footer {
+		  padding-top: 15px;
 		  position: absolute;
 		  bottom: 0;
 		}
 
+		@media (max-width: 991px)  {  
+		   .pr-m-header {
+			padding : 5px;
+			margin-bottom : -7px;
+		   }
+		  }
+		
 		.dropdown:hover>.dropdown-menu {
 		  display: block;
 		  margin-top: 0;
+		}
+		
+		.dropdown-item:hover {
+			background-color: #007BFF;
+			color: white;
 		}
 
 		.spiritual-background {
 		  background: url(images/head.jpeg) fixed;
 		  background-size: cover;
-		  background-position: 90% 100%;
+		  background-position: 83% 100%;
+		  height:51vh;
+		  }
+		  
+		@media (max-width: 1199px) {
+			.spiritual-background {
+				height:38vh;
+				background-position: 80% 0%;
+			}
 		}
 		
 		.special-card {
@@ -87,6 +101,14 @@
 		  width: 120px
 		}
 		
+		.img-scr {
+		width: 90%
+		}
+		
+		.img-pic {
+		  width: 200px
+		}
+		
 		.img-icon {
  		  width: 40px
 		}
@@ -95,21 +117,49 @@
 		  border-width:3px !important;
 		}
 		
-	</style>   
+		.golden-str {
+			color: #B7A64A !important;
+		}
+		
+		@media (min-width: 650px)  {		
+			.pr-m-header {
+				padding : 5px;
+				margin-bottom : -1px;
+			}
+			
+		
+			.footer .media {
+				transition-property: transform;
+				transition-duration : 0.2s;
+				transition-timing-function : ease-in;
+
+			}
+
+			.footer .media:hover {
+				transform : scale(1.1);
+						
+			}	
+			
+			.footer a:hover {
+				text-decoration : none;
+				outline : none;	
+			}
+		}
+		
+	</style> 
 	
 	</head>
 	
 	
-	<body style="background-color:#f0f0f0">
+	<body>
 		
 		<header>
 		<div class="container-fluid spiritual-background d-none d-md-block">
-			
 			<div class="row">
 			  <div class="col-5">
 			  <div class="card border-0 special-card">
 				<div class="card-body">
-				<div class="media">
+					<div class="media">
                         <a class="media-left waves-light d-none d-md-block">
                             <img class="rounded-circle img-logo my-2" src="images/herzen-logo-small-orig.png" alt="Test">
                         </a>
@@ -117,16 +167,13 @@
                             <h3 class="media-heading card-title">Герценовский университет</h3>
                             <h6 class="card-subtitle my-3">Российский Государственный Педагогический <br> Университет им. А. И. Герцена</h6>
 							<hr class="bg-dark">
-							<p class="card-text h3 mt-4"><strong>Кафедра компьтерных технологий <br> и электронного обучения</strong></p>							
+							<p class="card-text h3 mt-4" style="color : white; text-shadow : 2px 2px 3px black;"><strong>Кафедра компьютерных технологий <br> и электронного обучения</strong></p>							
                         </div>
-						
                     </div>
-
 		  	    </div>
 			  </div>
 			  </div>
 			</div>
-			<br><br><br><br><br><br><br><br><br><br>
 		</div>
 
 		<div class="container-fluid bg-dark d-md-none text-center"><br>
@@ -143,6 +190,8 @@
 		</header>
 		
 		<nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark">
+			<!-- Кнопка вверх! -->	<a href="javascript:" id="return-to-top"><img src="images/arrow.svg"></a>	<!-- Кнопка вверх! -->
+		  <a class="navbar-brand d-none d-md-block d-xl-none golden-str">Кафедра компьютерных технологий и электронного обучения</a>
 		  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavBar" aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -167,7 +216,7 @@
 				</div>
 			  </li>
 			  <li class="nav-item active dropdown mx-4">
-				<a class="nav-link dropdown-toggle" style="color: #B6BB43" href="#" id="dropdownD" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Учебная деятельность<span class="sr-only">(current)</span></a>
+				<a class="nav-link dropdown-toggle golden-str" href="#" id="dropdownD" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Учебная деятельность<span class="sr-only">(current)</span></a>
 				<div class="dropdown-menu" aria-labelledby="dropdownD">
 				  <a class="dropdown-item" href="educational_program.html">Образовательная программа</a>
 				  <a class="dropdown-item" href="e-learning.html">Электронное обучение</a>
@@ -263,13 +312,19 @@
 			</div>
 		</main>
 
-
 		<footer class="footer container-fluid bg-dark">
-			<br>
 			<div class="row">
 				<div class="container">
-					<p class="text-light h4">Контакты</p>
-					<div class="media my-3">
+					<p class="text-light h4 mb-3">Контакты</p>
+					<div class="media my-2">
+						<a class="media-left waves-light">
+							<img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
+						</a>
+						<div class="media-body">
+							<p class="text-light m-2">+7 (812) 643-77-67</p>
+						</div>
+					</div>
+					<div class="media my-2">
 						<a class="media-left waves-light">
 							<img class="rounded-circle img-icon" src="images/Mail.png" alt="Test">
 						</a>
@@ -278,7 +333,7 @@
 							<p class="text-light m-2">ctel-herzen@yandex.ru</p></a>
 						</div>
 					</div>
-					<div class="media my-3">
+					<div class="media my-2">
 						<a class="media-left waves-light">
 							<img class="rounded-circle img-icon" src="images/location.png" alt="Test">
 						</a>
@@ -287,20 +342,12 @@
 							<p class="text-light m-2">Санкт-Петербург, наб. реки Мойки, 48, корпус 1, аудитория 329</p></a>
 						</div>
 					</div>
-					<div class="media my-3">
-						<a class="media-left waves-light">
-							<img class="rounded-circle img-icon" src="images/tel.png" alt="Test">
-						</a>
-						<div class="media-body">
-							<p class="text-light m-2">+7 (812) 643-77-67</p>
-						</div>
-					</div>
-					<hr style="background-color: #B6BB43">
-					<p class="text-light text-right"><a href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
+					<hr style="background-color: #B7A64A">
+					<p class="text-right"><a href="https://ict.herzen.spb.ru">ict.herzen.spb.ru</a></p>
 				</div>
 			</div>
 		</footer>
-		<a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+
 		<script>
 		$(window).scroll(function() {
 			if ($(this).scrollTop() >= 150) {
